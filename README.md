@@ -10,7 +10,7 @@ Canses Demirsoy - Art and Level Design
 Levent Postalcioglu - Game Design
 
 
-The project was done in Unreal Engine 6. 4 unique puzzles were created with different mechanics.
+The project was done in Unreal Engine 5. 4 unique puzzles were created with different mechanics.
 
 Gameplay video: https://www.youtube.com/watch?v=Qtzqx12iPzQ
 
