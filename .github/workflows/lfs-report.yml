@@ -1,0 +1,29 @@
+name: LFS Storage Report
+
+on:
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: false
+
+      - name: Install git-lfs
+        run: git lfs install --skip-smudge
+
+      - name: List every LFS object ever committed, sorted by size
+        run: |
+          git lfs ls-files --all --size | sort -k2 -h -r > lfs_report.txt
+          echo "Toplam unique LFS obje sayisi:"
+          git lfs ls-files --all | wc -l
+          echo "--- En buyuk 40 obje ---"
+          head -40 lfs_report.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lfs-storage-report
+          path: lfs_report.txt
