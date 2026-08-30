@@ -36,6 +36,7 @@ jobs:
 
       - name: Re-add origin and force-push cleaned history
         run: |
+          git remote remove origin || true
           git remote add origin https://github.com/${{ github.repository }}.git
           git push --force origin --all
           git push --force origin --tags
