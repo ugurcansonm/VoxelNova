@@ -16,5 +16,5 @@ Gameplay video: https://www.youtube.com/watch?v=Qtzqx12iPzQ
 
 <img width="1024" height="903" alt="Vitraux_Logo2" src="https://github.com/user-attachments/assets/33b6d3c0-f4a9-4a30-813b-0efab94d65c2" />
 
-
+This project uses the Content/Abandoned_Cathedral package, which is not included in the repository; you'll need to download it from market and place it in the Content folder yourself.
 All source code and assets in this repository are © 2026 Ugurcan Sonmezoglu. All rights reserved. No part of this code may be reproduced or used without explicit permission.
